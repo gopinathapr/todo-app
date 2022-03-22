@@ -6,7 +6,7 @@ env:
   CLUSTER_NAME: myakscluster
   CLUSTER_RESOURCE_GROUP: my-resource-group
   NAMESPACE: namespace
-  SECRET: 03Bg1ob_CDmEnzN4cwk-mf00NdMf6Qdx.l
+  SECRET: acr-secret
   APP_NAME: todo-app
 
 jobs:
