@@ -1,4 +1,4 @@
-on: [push]
+on: [ push ]
 
 # Environment variables available to all jobs and steps in this workflow
 env:
@@ -14,6 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
+
+
+      - name: Build with Maven
+        run: mvn clean install
 
       # Connect to Azure Container Registry (ACR)
       - uses: azure/docker-login@v1
