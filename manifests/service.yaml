@@ -8,7 +8,7 @@ spec:
   selector:
     app: todo-app.
 
-
+---
 apiVersion: v1
 kind: Service
 metadata:
