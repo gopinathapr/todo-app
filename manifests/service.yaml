@@ -6,4 +6,16 @@ spec:
   ports:
     - port: 8080
   selector:
+    app: todo-app.
+
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: todo-app
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 8080
+  selector:
     app: todo-app
