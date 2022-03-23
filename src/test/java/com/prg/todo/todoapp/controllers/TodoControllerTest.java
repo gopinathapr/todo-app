@@ -20,7 +20,7 @@ class TodoControllerTest {
     private MockMvc mockMvc;
 
     @Test
-    public void shouldReturnDefaultMessage() throws Exception {
+    void shouldReturnDefaultMessage() throws Exception {
         mockMvc.perform(get("/todo/all")).andDo(print()).andExpect(status().isOk())
                 .andExpect(content().string(containsString("Learn AKS")));
     }
