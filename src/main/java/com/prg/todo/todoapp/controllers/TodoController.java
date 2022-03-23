@@ -3,7 +3,6 @@ package com.prg.todo.todoapp.controllers;
 
 import com.prg.todo.todoapp.objects.Todo;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
