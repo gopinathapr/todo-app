@@ -1,17 +1,10 @@
+name: Build
 on:
-  workflow_dispatch:
-    # Inputs the workflow accepts.
-    inputs:
-      name:
-# Environment variables available to all jobs and steps in this workflow
-env:
-  REGISTRY_NAME: prgacr123test
-  CLUSTER_NAME: myakscluster
-  CLUSTER_RESOURCE_GROUP: my-resource-group
-  NAMESPACE: namespace
-  SECRET: acr-secret
-  APP_NAME: todo-app
-
+  push:
+    branches:
+      - master
+  pull_request:
+    types: [opened, synchronize, reopened]
 jobs:
   build:
     name: Build
