@@ -1,6 +1,8 @@
 on:
   workflow_dispatch:
-
+    # Inputs the workflow accepts.
+    inputs:
+      name:
 # Environment variables available to all jobs and steps in this workflow
 env:
   REGISTRY_NAME: prgacr123test
